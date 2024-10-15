@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Community</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Classes/Events</h1>
+        <button id="btn" onclick="filterByDate()">Filter by date</button>
+        <div class="grid-container">
+          <div class="grid-item">Monday</div>
+          <div class="grid-item">Tuesday</div>
+          <div class="grid-item">Wednesday</div>
+          <div class="grid-item">Thursday</div>
+          <div class="grid-item">Friday</div>
+          <div class="grid-item">Saturday</div>
+          <div class="grid-item item7">Sunday</div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const classes = [
+        {
+          name: "Dancing",
+          location: "Zürich",
+          date: "Monday",
+        },
+        {
+          name: "Painting",
+          location: "Lausanne",
+          date: "Tuesday",
+        },
+        {
+          name: "Singing",
+          location: "Bern",
+          date: "Monday",
+        },
+        {
+          name: "Cooking",
+          location: "Zürich",
+          date: "Thursday",
+        },
+        {
+          name: "Hiking",
+          location: "Zürich",
+          date: "Friday",
+        },
+        {
+          name: "Maths",
+          location: "Bern",
+          date: "Saturday",
+        },
+      ];
+
+      function filterByDate() {
+        console.log("Success");
+      }
+    </script>
+  </body>
+</html>

@@ -50,8 +50,7 @@
   #root, #__next {
     isolation: isolate;
   }
-
-
+  
 
 /* Andrew's nav bar */
   .logo img {
@@ -100,3 +99,13 @@
   border-radius: 5px;
 }
 /* end of Andrew's nav bar */
+  h1 {
+    font-size: 36px;
+    color: #ffc612;
+  }
+
+  .wrapper {
+    width: 80%;
+    min-width: 600px;
+    margin: 0 auto;
+  }
