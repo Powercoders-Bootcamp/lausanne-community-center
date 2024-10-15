@@ -51,3 +51,52 @@
     isolation: isolate;
   }
 
+
+
+/* Andrew's nav bar */
+  .logo img {
+    max-width: 90px; /* Controls the size of the logo */
+    height: auto; /* Ensures the aspect ratio is maintained */
+}
+/* Header & Navigation */
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  font-size: 1.5rem;
+  color: #F7F4F3; /* Light color for the logo */
+}
+
+.navbar .nav-links {
+  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 2rem;
+}
+
+.navbar .nav-links li a {
+  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  color: #222222; /* dark color for nav links */
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar .cta-button {
+  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  font-weight: 700;
+  background-color: #F34213; /* Orange */
+  color: #F7F4F3;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+/* end of Andrew's nav bar */
