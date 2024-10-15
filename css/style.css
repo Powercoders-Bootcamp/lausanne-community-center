@@ -50,4 +50,15 @@
   #root, #__next {
     isolation: isolate;
   }
+  
 
+  h1 {
+    font-size: 36px;
+    color: #ffc612;
+  }
+
+  .wrapper {
+    width: 80%;
+    min-width: 600px;
+    margin: 0 auto;
+  }
