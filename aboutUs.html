@@ -2,28 +2,182 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Local Community Center</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <title>About Us</title>
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1000px;
+    }
+
+    header {
+      background-color: #ff9517;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #ff9517;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #ff9517;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 300px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff9517;
+      color: white;
+      position: relative;
+      margin-top: 40px;
+    }
+
+    footer nav {
+      margin-bottom: 15px;
+    }
+
+    footer nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>
-                <div class="left-part">
+  <header>
+    <h1>About Us</h1>
+    <p>Welcome to the Local Community Center</p>
+  </header>
 
-                </div>
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      At the Local Community Center, our mission is to bring people together
+      through enriching activities, classes, and events that foster learning,
+      growth, and connection. We aim to create an inclusive space where
+      everyone can find resources, support, and community.
+    </p>
+    <img src=./images/center1.jpg alt="Local Community Center">
+  </section>
 
-                <div class="right-part">
-                    
-                </div>
-            </div>
-        </nav>
+  <section class="services">
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Classes: Art, Fitness, Technology, Language Learning, and more</li>
+      <li>
+        Workshops: Skill-building workshops for all ages and backgrounds
+      </li>
+      <li>Events: Community events, festivals, and gatherings</li>
+      <li>Resources: Information on local services and support networks</li>
+    </ul>
+    <img src=./images/center2.jpg alt="Local Community Center">
+  </section>
 
-    </header>
+  <section class="team">
+    <h2>Meet Our Team</h2>
+    <p>
+      We are a passionate group of individuals dedicated to making a positive
+      impact in the community. Our team of instructors, volunteers, and staff
+      work tirelessly to create a welcoming environment for everyone.
+    </p>
+  </section>
 
+  <section class="get-involved">
+    <h2>How to Get Involved</h2>
+    <p>
+      We encourage you to participate in our programs, volunteer at our
+      events, or join us in supporting our local initiatives. Together, we can
+      build a stronger, more connected community.
+    </p>
+    <p>
+      For more information on how to get involved,
+      <a href="https://powercoders-bootcamp.github.io/lausanne-community-center/contactPage.html">contact us here</a>.
+    </p>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./community.html">Community</a>
+      <a href="./contactPage.html">Contact</a>
+    </nav>
+    <p>
+      &copy; 2024 Local Community Center | Designed with care for the community
+    </p>
+
+  </footer>
 </body>
 
 </html>
