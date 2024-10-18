@@ -10,6 +10,7 @@
   */
   * {
     margin: 0;
+    font-family: Alexandria, sans-serif;
   }
   
   /*
@@ -17,9 +18,28 @@
     3. Add accessible line-height
     4. Improve text rendering
   */
+
+  @font-face {
+    font-family: Alexandria;
+    font-weight: 400;
+    src: url(fonts/Alexandria-Regular.ttf);
+  } 
+  @font-face {
+    font-family: Alexandria;
+    font-weight: bold;
+    src: url(fonts/Alexandria-Bold.ttf);
+  } 
+  @font-face {
+    font-family: Alexandria;
+    font-weight: lighter;
+    src: url(fonts/Alexandria-Light.ttf);
+  } 
+
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: Alexandria, sans-serif;
+    color: #171717;
   }
   
   /*
@@ -50,7 +70,41 @@
   #root, #__next {
     isolation: isolate;
   }
-  
+  /* common styles */
+
+  h1 {
+    font-size: 36px;
+    color: #ffc612;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  button {
+    padding: 10px;
+    background-color: #FF9517;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #B3FAFF;
+    color: #171717;
+  }
 
 /* Andrew's nav bar */
   .logo img {
@@ -99,13 +153,56 @@
   border-radius: 5px;
 }
 /* end of Andrew's nav bar */
-  h1 {
-    font-size: 36px;
-    color: #ffc612;
-  }
-
+  /* main page */
   .wrapper {
     width: 80%;
     min-width: 600px;
     margin: 0 auto;
+    padding: 2rem;
+
+    @media (max-width: 600px) {
+      width: 100%; 
+    }
   }
+  .welcome {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .welcome p {
+    margin: 20px 0;
+  }
+
+/* Contact Page by Mustafa*/
+
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-container h1, .contact-info h2 {
+  color: #171717;
+}
+
+.contact-info {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.contact-info p {
+  margin: 5px 0;
+}
+.contactWordmark img{
+  width: 100px;
+  height: 100px;
+} 
+@media (max-width: 600px) {
+  .contact-container {
+      padding: 15px;
+  }
+  .contact-container h1 {
+      font-size: 24px;
+  }
+}

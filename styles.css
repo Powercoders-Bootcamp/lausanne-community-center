@@ -97,3 +97,4 @@ label:not([for="event"]):after, form p::after {
   display: inline;
   margin-left: 5px;
 }
+}
