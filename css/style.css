@@ -20,6 +20,7 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    padding: 2rem 2rem;
   }
   
   /*
@@ -63,17 +64,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0rem 0rem;
 }
 
 .navbar .logo {
-  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  /*font-family: 'Atyp Display', sans-serif; !* Heading font *!*/
   font-size: 1.5rem;
   color: #F7F4F3; /* Light color for the logo */
 }
 
 .navbar .nav-links {
-  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  /*font-family: 'Atyp Display', sans-serif; !* Heading font *!*/
   list-style-type: none;
   display: flex;
 }
@@ -83,14 +84,14 @@
 }
 
 .navbar .nav-links li a {
-  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  /*font-family: 'Atyp Display', sans-serif; !* Heading font *!*/
   color: #222222; /* dark color for nav links */
   text-decoration: none;
   font-weight: 700;
 }
 
 .navbar .cta-button {
-  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  /*font-family: 'Atyp Display', sans-serif; !* Heading font *!*/
   font-weight: 700;
   background-color: #F34213; /* Orange */
   color: #F7F4F3;
@@ -101,7 +102,10 @@
 /* end of Andrew's nav bar */
   h1 {
     font-size: 36px;
-    color: #ffc612;
+    color: #323232;
+    /*font-family: 'Atyp Display', sans-serif; !* Heading font *!*/
+    font-weight: 700;
+    margin-top: 2rem;
   }
 
   .wrapper {
