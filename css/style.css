@@ -105,6 +105,13 @@
     background-color: #B3FAFF;
     color: #171717;
   }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff9517;
+    color: white;
+    position: relative;
+  }
 
 /* Andrew's nav bar */
   .logo img {
