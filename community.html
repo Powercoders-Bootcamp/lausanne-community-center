@@ -2,63 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Community</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lausanne Community Center</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <main>
       <section>
-        <h1>Classes/Events</h1>
-        <button id="btn" onclick="filterByDate()">Filter by date</button>
-        <div class="grid-container">
-          <div class="grid-item">Monday</div>
-          <div class="grid-item">Tuesday</div>
-          <div class="grid-item">Wednesday</div>
-          <div class="grid-item">Thursday</div>
-          <div class="grid-item">Friday</div>
-          <div class="grid-item">Saturday</div>
-          <div class="grid-item item7">Sunday</div>
+        <h1 id="events">Events</h1>
+        <button id="btn-all" onclick="filterByCategory()">Show all</button>
+        <button id="btn-art" onclick="filterByCategory('Art')">Art</button>
+        <button id="btn-food" onclick="filterByCategory('Food')">Food</button>
+        <button id="btn-sport" onclick="filterByCategory('Sport')">Sport</button>
+        <button id="btn-education" onclick="filterByCategory('Education')">Education</button>
+        <div id="grid" class="grid-container">
+          <div class="item1"></div>
+          <div class="item2"></div>
+          <div class="item3"></div>
+          <div class="item4"></div>
+          <div class="item5"></div>
         </div>
       </section>
     </main>
     <script>
-      const classes = [
+      const events = [
         {
           name: "Dancing",
           location: "Zürich",
-          date: "Monday",
+          date: "21 October",
+          category: "Art",
         },
         {
           name: "Painting",
           location: "Lausanne",
-          date: "Tuesday",
+          date: "22 October",
+          category: "Art",
         },
         {
           name: "Singing",
           location: "Bern",
-          date: "Monday",
+          date: "21 October",
+          category: "Art",
         },
         {
           name: "Cooking",
           location: "Zürich",
-          date: "Thursday",
+          date: "24 October",
+          category: "Food",
         },
         {
           name: "Hiking",
           location: "Zürich",
-          date: "Friday",
+          date: "25 October",
+          category: "Sport",
         },
         {
-          name: "Maths",
+          name: "Running",
+          location: "Zürich",
+          date: "25 October",
+          category: "Sport",
+        },
+        {
+          name: "German",
           location: "Bern",
-          date: "Saturday",
+          date: "26 October",
+          category: "Education",
+        },
+        {
+          name: "English",
+          location: "Bern",
+          date: "26 October",
+          category: "Education",
         },
       ];
 
-      function filterByDate() {
-        console.log("Success");
+      function filterByCategory(category) {
+        let grid = document.querySelector("#grid");
+        grid.innerHTML = "";
+        const filteredEvents = category === "all" ? events : events.filter((event) => event.category === category);
+        for (val of filteredEvents) {
+          let node = document.createElement("div");
+          node.innerHTML = `<h3>${val.name}</h3><p>Location: ${val.location}</p><p>Date: ${val.date}</p>`;
+          grid.appendChild(node);
+        }
       }
+      filterByCategory("all");
+      document.getElementById("btn-all").addEventListener("click", () => filterByCategory("all"));
+      document.getElementById("btn-art").addEventListener("click", () => filterByCategory("Art"));
+      document.getElementById("btn-food").addEventListener("click", () => filterByCategory("Food"));
+      document.getElementById("btn-sport").addEventListener("click", () => filterByCategory("Sport"));
+      document.getElementById("btn-education").addEventListener("click", () => filterByCategory("Education"));
     </script>
   </body>
 </html>

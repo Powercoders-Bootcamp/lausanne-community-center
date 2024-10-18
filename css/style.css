@@ -109,3 +109,51 @@
     min-width: 600px;
     margin: 0 auto;
   }
+/*Content Inna*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+#events {
+  text-align: center;
+  font-size: 50px;
+  color: #ff9517;
+}
+
+.grid-container > div {
+  background-color: #ff9517;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border: 5px solid #b3faff;
+  border-radius: 10px;
+}
+
+#btn-all {
+  background-color: #b3faff;
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+  margin: 2px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#btn-art,
+#btn-sport,
+#btn-food,
+#btn-education {
+  background-color: #b3faff;
+  color: #ffffff;
+  width: 80px;
+  line-height: 40px;
+  text-align: center;
+  margin: 2px;
+  margin-bottom: 20px;
+  color: black;
+}
+/*End Content Inna*/
