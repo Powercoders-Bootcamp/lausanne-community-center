@@ -1,115 +1,132 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
     2. Remove default margin
   */
-  * {
-    margin: 0;
-    font-family: Alexandria, sans-serif;
-  }
-  
-  /*
+* {
+  margin: 0;
+  font-family: Alexandria, sans-serif;
+}
+
+/*
     Typographic tweaks!
     3. Add accessible line-height
     4. Improve text rendering
   */
 
-  @font-face {
-    font-family: Alexandria;
-    font-weight: 400;
-    src: url(fonts/Alexandria-Regular.ttf);
-  } 
-  @font-face {
-    font-family: Alexandria;
-    font-weight: bold;
-    src: url(fonts/Alexandria-Bold.ttf);
-  } 
-  @font-face {
-    font-family: Alexandria;
-    font-weight: lighter;
-    src: url(fonts/Alexandria-Light.ttf);
-  } 
+@font-face {
+  font-family: Alexandria;
+  font-weight: 400;
+  src: url(fonts/Alexandria-Regular.ttf);
+}
+@font-face {
+  font-family: Alexandria;
+  font-weight: bold;
+  src: url(fonts/Alexandria-Bold.ttf);
+}
+@font-face {
+  font-family: Alexandria;
+  font-weight: lighter;
+  src: url(fonts/Alexandria-Light.ttf);
+}
 
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: Alexandria, sans-serif;
-    color: #171717;
-  }
-  
-  /*
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Alexandria, sans-serif;
+  color: #171717;
+}
+
+/*
     5. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
     6. Remove built-in form typography styles
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
     7. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
     8. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
-  /* common styles */
+#root,
+#__next {
+  isolation: isolate;
+}
+/* common styles */
 
-  h1 {
-    font-size: 36px;
-    color: #ffc612;
-  }
+h1 {
+  font-size: 36px;
+  color: #ffc612;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  input, textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  button {
-    padding: 10px;
-    background-color: #FF9517;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #B3FAFF;
-    color: #171717;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+button {
+  padding: 10px;
+  background-color: #ff9517;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #b3faff;
+  color: #171717;
+}
 
 /* Andrew's nav bar */
-  .logo img {
-    max-width: 90px; /* Controls the size of the logo */
-    height: auto; /* Ensures the aspect ratio is maintained */
+.logo img {
+  max-width: 90px; /* Controls the size of the logo */
+  height: auto; /* Ensures the aspect ratio is maintained */
 }
 /* Header & Navigation */
 .navbar {
@@ -121,13 +138,13 @@
 }
 
 .navbar .logo {
-  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  font-family: "Atyp Display", sans-serif; /* Heading font */
   font-size: 1.5rem;
-  color: #F7F4F3; /* Light color for the logo */
+  color: #f7f4f3; /* Light color for the logo */
 }
 
 .navbar .nav-links {
-  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  font-family: "Atyp Display", sans-serif; /* Heading font */
   list-style-type: none;
   display: flex;
 }
@@ -137,40 +154,40 @@
 }
 
 .navbar .nav-links li a {
-  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  font-family: "Atyp Display", sans-serif; /* Heading font */
   color: #222222; /* dark color for nav links */
   text-decoration: none;
   font-weight: 700;
 }
 
 .navbar .cta-button {
-  font-family: 'Atyp Display', sans-serif; /* Heading font */
+  font-family: "Atyp Display", sans-serif; /* Heading font */
   font-weight: 700;
-  background-color: #F34213; /* Orange */
-  color: #F7F4F3;
+  background-color: #f34213; /* Orange */
+  color: #f7f4f3;
   padding: 0.5rem 1.5rem;
   text-decoration: none;
   border-radius: 5px;
 }
 /* end of Andrew's nav bar */
-  /* main page */
-  .wrapper {
-    width: 80%;
-    min-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
+/* main page */
+.wrapper {
+  width: 80%;
+  min-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
 
-    @media (max-width: 600px) {
-      width: 100%; 
-    }
+  @media (max-width: 600px) {
+    width: 100%;
   }
-  .welcome {
-    margin-bottom: 40px;
-    font-size: 20px;
-  }
-  .welcome p {
-    margin: 20px 0;
-  }
+}
+.welcome {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.welcome p {
+  margin: 20px 0;
+}
 
 /* Contact Page by Mustafa*/
 
@@ -182,7 +199,8 @@
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.contact-container h1, .contact-info h2 {
+.contact-container h1,
+.contact-info h2 {
   color: #171717;
 }
 
@@ -194,19 +212,92 @@
 .contact-info p {
   margin: 5px 0;
 }
-.contactWordmark img{
+.contactWordmark img {
   width: 100px;
   height: 100px;
-} 
+}
 @media (max-width: 600px) {
   .contact-container {
-      padding: 15px;
+    padding: 15px;
   }
   .contact-container h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 }
 
+form {
+  font-family: sans-serif;
+  width: 40%;
+  margin: 3rem auto;
+}
+form fieldset {
+  border-radius: 5px;
+  border: 1.5px solid rgb(28 30 13);
+  padding: 1.5rem 2rem;
+}
+form legend {
+  padding: 0 1rem;
+}
+form label {
+  display: block;
+  margin-top: 1rem;
+}
+form p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+form button {
+  margin: 1rem;
+  border-radius: 10px;
+  border: 1px solid #171717;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: #ff9517;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form button:hover {
+  background-color: #b3faff;
+}
+
+textarea::placeholder {
+  opacity: 80%;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+input.radio {
+  float: left;
+  clear: none;
+  margin: 0.5rem;
+}
+input:focus,
+textarea:focus {
+  border: 1.5px solid rgb(239, 142, 82);
+}
+form textarea {
+  height: 10rem;
+  width: 80%;
+  padding: 0.5rem 0.5rem;
+}
+label:not([for="event"]):after,
+form p::after {
+  content: "*";
+  color: red;
+}
+.event {
+  float: left;
+  clear: none;
+}
+.events input[type="radio"] {
+  width: 15px;
+}
+
+.events label {
+  display: inline;
+  margin-left: 5px;
+}
 
 /*    footer {
       text-align: center;

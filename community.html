@@ -21,12 +21,78 @@
           <div class="grid-item item7">Sunday</div>
         </div>
 
-        <form>
-          
+        <form action="mailto:info@powercoders.org" method="post" enctype="text/plain">
+          <fieldset>
+            <legend><h2>Sign up for our class or event!</h2></legend>
+
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Your phone:</label>
+            <input type="phone" id="phone" name="phone" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="location">Select your location:</label>
+            <select name="location" id="location" required>
+            <option value="zürich" selected>Select the city...</option>
+             <option value="zürich">Zürich</option>
+             <option value="lausanne">Lausanne</option>
+             <option value="bern">Bern</option>
+            </select>
+
+            <p>Select the class/event:</p>
+    
+            <div class="events">
+              <input type="radio" id="event" name="event" value="class" unchecked>
+              <label for="event">Dancing</label>
+            </div>
+
+            <div class="events">
+              <input type="radio" id="event" name="event" value="class" unchecked>
+              <label for="event">Cooking</label>
+            </div>
+
+            <div class="events">
+              <input type="radio" id="event" name="event" value="class" unchecked>
+              <label for="event">Hiking</label>
+            </div>
+
+            <div class="events">
+              <input type="radio" id="event" name="event" value="class" unchecked>
+              <label for="event">Painting</label>
+            </div>
+
+            <div class="events">
+              <input type="radio" id="event" name="event" value="class" unchecked>
+              <label for="event">Singing</label>
+            </div>
+
+            <div class="events">
+              <input type="radio" id="event" name="event" value="class" unchecked>
+              <label for="event">Running</label>
+            </div>
+
+            <div class="events">
+              <input type="radio" id="event" name="event" value="class" unchecked>
+              <label for="event">German</label>
+            </div>
+
+            <div class="events">
+              <input type="radio" id="event" name="event" value="class" unchecked>
+              <label for="event">English</label>
+            </div>
+
+            <p>Your comments:</p>
+              <textarea id="message" name="message" placeholder="Leave your message here (max.1000 symbols)" maxlength="1000" required></textarea>
+          </fieldset>
+          <button>Submit!</button>
         </form>
       </section>
     </main>
     <script>
+
       const classes = [
         {
           name: "Dancing",
