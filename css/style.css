@@ -10,6 +10,7 @@
   */
   * {
     margin: 0;
+    font-family: Alexandria, sans-serif;
   }
   
   /*
@@ -17,9 +18,27 @@
     3. Add accessible line-height
     4. Improve text rendering
   */
+
+  @font-face {
+    font-family: Alexandria;
+    font-weight: 400;
+    src: url(fonts/Alexandria-Regular.ttf);
+  } 
+  @font-face {
+    font-family: Alexandria;
+    font-weight: bold;
+    src: url(fonts/Alexandria-Bold.ttf);
+  } 
+  @font-face {
+    font-family: Alexandria;
+    font-weight: lighter;
+    src: url(fonts/Alexandria-Light.ttf);
+  } 
+
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: Alexandria, sans-serif;
   }
   
   /*
@@ -52,10 +71,14 @@
   }
   /* common styles */
 
+  
+
   h1 {
     font-size: 36px;
     color: #ffc612;
   }
+
+  body
 
 /* Andrew's nav bar */
   .logo img {
