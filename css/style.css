@@ -39,6 +39,7 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: Alexandria, sans-serif;
+    color: #171717;
   }
   
   /*
@@ -157,6 +158,18 @@
     width: 80%;
     min-width: 600px;
     margin: 0 auto;
+    padding: 2rem;
+
+    @media (max-width: 600px) {
+      width: 100%; 
+    }
+  }
+  .welcome {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .welcome p {
+    margin: 20px 0;
   }
 
 /* Contact Page by Mustafa*/
