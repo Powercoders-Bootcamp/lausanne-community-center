@@ -26,3 +26,40 @@ h1 {
   text-align: center;
   font-size: 45px;
 }
+form {
+  width:60%;
+  margin: 3rem auto;
+}
+form legend {
+  margin: 3rem auto;
+}
+form label {
+  margin-top: 1rem;
+  display: block;
+  padding-left: 2rem;
+  border: 2px solid red;
+}
+input {
+  padding-left: 2rem;
+}
+
+form p {
+  margin-left: 1rem;
+}
+form button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5;
+  border-radius: 5px;
+}
+.event {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.event input[type="radio"] {
+  flex-basis: 1%;
+}
+.event label {
+  flex-basis: 99%;
+}
+
