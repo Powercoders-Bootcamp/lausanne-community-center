@@ -298,3 +298,32 @@ form p::after {
   display: inline;
   margin-left: 5px;
 }
+
+/*    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff9517;
+      color: white;
+      position: relative;
+      margin-top: 40px;
+    }
+
+    footer nav {
+      margin-bottom: 15px;
+    }
+
+    footer nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      margin-top: 10px;
+    }
+      */
