@@ -67,7 +67,6 @@ button {
 button:hover {
   background-color: #B3FAFF;
   color: #171717;
-
 }
 .contact-info {
   display: flex;
